@@ -12,26 +12,26 @@
 
 * {
     box-sizing: border-box;
-    background-color: var(--color-one);
+    
 }
 body {
     font-family: var(--font-main);
     color: var(--color-dark);
+    font-size: 1.3rem;
+    background-color: var(--color-one);
 }
 
 main{
     display: flex;
     flex-direction: column;
 }
-h1 {
-    font-family: var(--font-head);
-    color: var(--color-light);
-    letter-spacing: .5rem;
-}
 
 header{
     padding: 0 0 0 3rem;
-    
+    white-space: nowrap;
+    font-family: var(--font-head);
+    color: var(--color-light);
+    letter-spacing: .5rem;
 }
 
 a {
@@ -42,12 +42,59 @@ div {
     text-align: center;
 }
 
+.card {
+    background-color: var(--color-light);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px var(--color-three);
+    min-height: 5rem;
+    padding: 1rem;
+    margin: 0 1rem 1rem 0;
+    width: 20%;
+}
+.card div {
+    margin-top: 1rem;
+}
+
 #about-me {
     margin: 0 auto;
     width: 85rem;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 #works {
-    padding: 0 0 0 3rem;
+    padding: 0 3rem 0 3rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 991px) {
+    .card {
+        width: 40%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+    .card {
+        width: 80%;
+    }
+    header {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+    }
+    header {
+        padding: 0;
+        letter-spacing: .3rem;
+    }
 }

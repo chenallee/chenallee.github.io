@@ -1,0 +1,53 @@
+:root {
+    --color-light: #F4F7E2;
+    --color-one: #CFDAA7;
+    --color-two: #A5C09E;
+    --color-three: #ACB481;
+    --color-dark: #7B9371;
+
+    --font-head: 'Permanent Marker', cursive;
+    --font-main: 'Rubik', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+* {
+    box-sizing: border-box;
+    background-color: var(--color-one);
+}
+body {
+    font-family: var(--font-main);
+    color: var(--color-dark);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-family: var(--font-head);
+    color: var(--color-light);
+    letter-spacing: .5rem;
+}
+
+header{
+    padding: 0 0 0 3rem;
+    
+}
+
+a {
+    color: var(--color-three)
+}
+
+div {
+    text-align: center;
+}
+
+#about-me {
+    margin: 0 auto;
+    width: 85rem;
+    max-width: 100%;
+}
+
+#works {
+    padding: 0 0 0 3rem;
+}

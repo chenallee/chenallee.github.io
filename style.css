@@ -111,6 +111,9 @@ div {
         padding: 0;
         letter-spacing: .3rem;
     }
+    header span {
+        font-size: 1.5rem;
+    }
 }
 
 /* Safari 4.0 - 8.0 */
